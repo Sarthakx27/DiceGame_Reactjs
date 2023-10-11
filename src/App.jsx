@@ -12,7 +12,7 @@ padding: 10px;
 
 function App() {
   
-  const[isGameStarted, setIsGameStarted] = useState(true)
+  const[isGameStarted, setIsGameStarted] = useState(false)
   const toggleGamePlay = () => {
     setIsGameStarted((prev) => !prev);  //this will reverse the state from true to false and vice-versa
   }
