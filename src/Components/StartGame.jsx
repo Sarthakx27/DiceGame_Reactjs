@@ -25,14 +25,40 @@ const Container = styled.div`
   display: flex;
   margin: 0 auto;
   align-items: center;
+  @media (max-width: 880px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div img{
+      @media (max-width: 880px) {
+        width: 400px;  
+      }
+      @media (max-width: 500px) {
+        width: 300px;  
+      }
+  }
 
   .content {
+    padding-right: 80px;
     display: flex;
     flex-direction: column;
     align-items: end;
+    @media (max-width: 880px) {
+        align-items: center;
+        padding-right: 0px;
+      }
     h1 {
       font-size: 96px;
       white-space: nowrap;
+      @media (max-width: 880px) {
+        font-size: 50px;
+      }
+      @media (max-width: 880px) {
+        font-size: 30px;
+      }
     }
   }
 `;
