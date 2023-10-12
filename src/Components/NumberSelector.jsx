@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const NumberSelector = ({ selectedNumber, setSelectedNumber, error, setError }) => {
 
     const arrNumber = [1, 2, 3, 4, 5, 6]
-    const numberSelectorHandler = (value)=> {
+    const numberSelectorHandler = (value) => {
         setSelectedNumber(value)
         setError("")
     }
@@ -38,15 +38,15 @@ align-items: end;
         display: flex;
         gap: 24px;
         @media (max-width: 624px) {
-        gap: 10px;
+            gap: 10px;
         }
     }
     p{
         font-size: 24px;
         font-weight: 700px;
         @media (max-width: 624px) {
-        font-size: 16px;
-  }
+            font-size: 16px;
+        }
     }
     .error{
         color: red;
@@ -69,10 +69,10 @@ const Box = styled.div`
     @media (max-width: 842px) {
         height: 40px;
         width: 40px;
-  }
+    }
     @media (max-width: 624px) {
         height: 25px;
         width: 25px;
         font-size: 10px;
-  }
+    }
 `
