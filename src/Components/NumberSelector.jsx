@@ -37,14 +37,22 @@ align-items: end;
     .flex{
         display: flex;
         gap: 24px;
+        @media (max-width: 624px) {
+        gap: 10px;
+        }
     }
     p{
         font-size: 24px;
         font-weight: 700px;
+        @media (max-width: 624px) {
+        font-size: 16px;
+  }
     }
     .error{
         color: red;
     }
+    
+
 `
 
 const Box = styled.div`
@@ -57,4 +65,14 @@ const Box = styled.div`
     font-weight: 700;
     background-color: ${(props) => (props.isSelected ? "black" : "white")};
     color: ${(props) => (!props.isSelected ? "black" : "white")};
+
+    @media (max-width: 842px) {
+        height: 40px;
+        width: 40px;
+  }
+    @media (max-width: 624px) {
+        height: 25px;
+        width: 25px;
+        font-size: 10px;
+  }
 `
